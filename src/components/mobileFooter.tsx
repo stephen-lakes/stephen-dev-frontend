@@ -10,10 +10,10 @@ const MobileFooter: React.FC = () => {
       <a href="https://www.github.com/stephen-lakes">
         <img src={githubIcon} alt="" className="w-8 h-8" />
       </a>
-      <a href="">
+      <a href="https://www.linkedin.com/in/stephenoluyomi/">
         <img src={linkedIncon} alt="" className="w-8 h-8" />
       </a>
-      <a href="">
+      <a href="https://www.x.com/StephenOluyomi">
         <img src={twitterIcon} alt="" className="w-8 h-8" />
       </a>
     </div>
