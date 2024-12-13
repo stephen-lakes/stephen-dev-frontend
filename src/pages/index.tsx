@@ -6,6 +6,7 @@ import Project from "./project";
 
 const Index: React.FC = () => {
   const [page, setPage] = useState(1);
+  const navItems: string[] = ["Home", "Resume", "Projects", "Contact"];
 
   const renderPage = () => {
     switch (page) {
@@ -25,11 +26,13 @@ const Index: React.FC = () => {
   return (
     <div>
       {renderPage()}
+
       <nav>
-        <button onClick={() => setPage(1)}>Home</button>
-        <button onClick={() => setPage(2)}>Resume</button>
-        <button onClick={() => setPage(3)}>Project</button>
-        <button onClick={() => setPage(4)}>Contact</button>
+        {navItems.map((navItem, idx) => (
+          <button key={idx} onClick={() => setPage(idx + 1)}>
+            {navItem}
+          </button>
+        ))}
       </nav>
     </div>
   );
