@@ -159,7 +159,13 @@ const Resume: React.FC = () => {
         <HorizontalCategoryDivider categoryName={`Projects`} />
       </div>
       <p>
-        some select project can be found <a href="">here</a>
+        Some select project can be found
+        <a
+          href="https://www.github.com/stephen-lakes"
+          className="underline pl-1"
+        >
+          here
+        </a>
       </p>
     </div>
   );
@@ -233,4 +239,13 @@ const EducationList: React.FC = () => {
   );
 };
 
+// const ProjectList: React.FC = () => {
+//   return (
+//     <>
+//       {projectList.map((p) => (
+//         <div>{p}</div>
+//       ))}
+//     </>
+//   );
+// };
 export default Resume;
