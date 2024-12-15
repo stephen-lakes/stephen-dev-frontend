@@ -24,10 +24,6 @@ interface Certifications {
   dateEarned: string;
 }
 
-interface Education {
-  title: string;
-}
-
 const experience: Experience[] = [
   {
     title: "Software Engineer",
@@ -106,7 +102,7 @@ const certifications: Certifications[] = [
   },
 ];
 
-const education = ["B.Sc Mathematics at University of Lagos"];
+const education: string[] = ["B.Sc Mathematics at University of Lagos"];
 
 const Resume: React.FC = () => {
   return (
@@ -236,4 +232,5 @@ const EducationList: React.FC = () => {
     </>
   );
 };
+
 export default Resume;
