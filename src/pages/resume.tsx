@@ -13,6 +13,11 @@ interface SkillCategory {
   skills: string[];
 }
 
+interface Languages {
+  language: string;
+  level: string;
+}
+
 const experience: Experience[] = [
   {
     title: "Software Engineer",
@@ -68,9 +73,14 @@ const skills: SkillCategory[] = [
   },
 ];
 
+const languages: Languages[] = [
+  { language: "English", level: "Proficient" },
+  { language: "French", level: "Beginner" },
+];
+
 const Resume: React.FC = () => {
   return (
-    <div className="p-6">
+    <div className="p-6 text-[15px]">
       <h1>Stephen Oluyomi</h1>
       <p>
         As a graduate in Mathematics and a Software Engineer, I am driven by a
@@ -118,7 +128,7 @@ const Resume: React.FC = () => {
       <div className="Languages my-2">
         <HorizontalCategoryDivider categoryName={`Languages`} />
 
-        <p>English ----- PROFICIENT</p>
+        <LanguageList />
       </div>
       <div className="Projects my-2">
         <HorizontalCategoryDivider categoryName={`Projects`} />
@@ -156,6 +166,19 @@ const ExperienceList: React.FC = () => {
             </div>
           </div>
         </div>
+      ))}
+    </>
+  );
+};
+
+const LanguageList: React.FC = () => {
+  return (
+    <>
+      {languages.map((lang) => (
+        <p className="flex gap-8">
+          <span>{lang.language}</span>
+          <span className="text-[#777778]">{lang.level.toUpperCase()}</span>
+        </p>
       ))}
     </>
   );
