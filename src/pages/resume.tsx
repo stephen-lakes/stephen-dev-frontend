@@ -18,6 +18,12 @@ interface Languages {
   level: string;
 }
 
+interface Certifications {
+  title: string;
+  academy: string;
+  dateEarned: string;
+}
+
 const experience: Experience[] = [
   {
     title: "Software Engineer",
@@ -78,6 +84,24 @@ const languages: Languages[] = [
   { language: "French", level: "Beginner" },
 ];
 
+const certifications: Certifications[] = [
+  {
+    title: "Python for Data Science",
+    academy: "IBM Developer Skills Network",
+    dateEarned: "Nov, 2019",
+  },
+  {
+    title: "Python for Data Science",
+    academy: "IBM Developer Skills Network",
+    dateEarned: "Nov, 2019",
+  },
+  {
+    title: "Python for Data Science",
+    academy: "IBM Developer Skills Network",
+    dateEarned: "Nov, 2019",
+  },
+];
+
 const Resume: React.FC = () => {
   return (
     <div className="p-6 text-[15px]">
@@ -123,7 +147,7 @@ const Resume: React.FC = () => {
 
       <div className="certification my-2">
         <HorizontalCategoryDivider categoryName={`Certifications`} />
-        <p>ReactJS Zero To Mastery by Andrei. - Udemy</p>
+        <CertificationsList />
       </div>
       <div className="Languages my-2">
         <HorizontalCategoryDivider categoryName={`Languages`} />
@@ -136,8 +160,6 @@ const Resume: React.FC = () => {
       <p>
         some select project can be found <a href="">here</a>
       </p>
-
-      <p className="mt-10"></p>
     </div>
   );
 };
@@ -184,4 +206,19 @@ const LanguageList: React.FC = () => {
   );
 };
 
+const CertificationsList: React.FC = () => {
+  return (
+    <>
+      {certifications.map((c) => (
+        <div>
+          <p className="font-semibold">{c.title}</p>
+          <p className="flex justify-between">
+            <span className="text-sm text-gray-500">{c.academy}</span>
+            <span className="text-xs">{c.dateEarned}</span>
+          </p>
+        </div>
+      ))}
+    </>
+  );
+};
 export default Resume;
