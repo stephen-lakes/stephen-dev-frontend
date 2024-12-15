@@ -24,6 +24,10 @@ interface Certifications {
   dateEarned: string;
 }
 
+interface Education {
+  title: string;
+}
+
 const experience: Experience[] = [
   {
     title: "Software Engineer",
@@ -102,25 +106,27 @@ const certifications: Certifications[] = [
   },
 ];
 
+const education = ["B.Sc Mathematics at University of Lagos"];
+
 const Resume: React.FC = () => {
   return (
     <div className="p-6 text-[15px]">
-      <h1>Stephen Oluyomi</h1>
+      <h1 className="text-4xl">Stephen Oluyomi</h1>
       <p>
-        As a graduate in Mathematics and a Software Engineer, I am driven by a
-        passion for leveraging technology to tackle real-world challenges.
-        Equipped with a robust understanding of Computer Science and Engineering
-        principles, along with proficiency in programming languages like
-        JavaScript, Python, Kotlin, and Java, I am continuously exploring
-        avenues to expand my knowledge and apply my expertise in novel and
-        inventive ways. Beyond my academic endeavors, I have undertaken
-        internships with prominent technology firms, enriching my skill set
-        through involvement in intricate software initiatives. I thrive as a
-        collaborative team member, relishing opportunities to engage with peers
-        and contribute insights. I am thrilled to embark on a journey of
-        continual learning and advancement as a software engineer. I am
-        enthusiastic about utilizing my skills and expertise to address complex
-        challenges and contribute positively to our world.
+        Dynamic and results-driven software engineer with a robust background in
+        full-stack development, specializing in creating high-performance
+        applications and seamless user experiences. Demonstrated success in
+        developing innovative solutions, optimizing search functionalities, and
+        integrating email verification systems that significantly boost user
+        engagement and verification rates. I introduced a system that
+        streamlined our testing and release workflow, enhancing deployment
+        efficiency and reliability. Proficient in a diverse set of technologies
+        including TypeScript, Node.js, PostgreSQL, React, and Tailwind CSS, with
+        a strong focus on enhancing user retention through meticulous front-end
+        and back-end development. Adept at documenting APIs and working
+        collaboratively in fast-paced environments, dedicated to continuous
+        improvement and the delivery of impactful, high-quality software
+        solutions.
       </p>
 
       <div className="skills my-2">
@@ -142,7 +148,7 @@ const Resume: React.FC = () => {
 
       <div className="education my-2">
         <HorizontalCategoryDivider categoryName={`Education`} />
-        <p>B.Sc Mathematics at University of Lagos</p>
+        <EducationList />
       </div>
 
       <div className="certification my-2">
@@ -151,7 +157,6 @@ const Resume: React.FC = () => {
       </div>
       <div className="Languages my-2">
         <HorizontalCategoryDivider categoryName={`Languages`} />
-
         <LanguageList />
       </div>
       <div className="Projects my-2">
@@ -217,6 +222,16 @@ const CertificationsList: React.FC = () => {
             <span className="text-xs">{c.dateEarned}</span>
           </p>
         </div>
+      ))}
+    </>
+  );
+};
+
+const EducationList: React.FC = () => {
+  return (
+    <>
+      {education.map((e) => (
+        <div>{e}</div>
       ))}
     </>
   );
