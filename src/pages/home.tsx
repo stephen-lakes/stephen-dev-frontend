@@ -1,9 +1,12 @@
 import React from "react";
 import Nav from "../components/nav";
+import PageMeta from "../components/pageMeta";
+import homeFavicon from "../assets/github.svg";
 
 export const Home: React.FC = () => {
   return (
     <>
+      <PageMeta title="Stephen Oluyomi" favicon={homeFavicon} />
       <Intro />
       <Nav />
     </>

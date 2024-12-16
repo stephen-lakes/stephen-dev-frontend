@@ -1,5 +1,6 @@
 import React from "react";
 import HorizontalCategoryDivider from "../components/horizontalCategoryDivider";
+import PageMeta from "../components/pageMeta";
 
 interface Experience {
   title: string;
@@ -113,6 +114,8 @@ const education: string[] = ["B.Sc Mathematics at University of Lagos"];
 
 const Resume: React.FC = () => {
   return (
+    <>
+    <PageMeta title="Stephen Oluyomi - Resume" favicon="" />
     <div className="p-6 text-[15px]">
       <h1 className="text-4xl">Stephen Oluyomi</h1>
       <p>
@@ -175,6 +178,7 @@ const Resume: React.FC = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
