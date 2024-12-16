@@ -6,6 +6,8 @@ interface Experience {
   company: string;
   contract: string;
   work: string[];
+  startDate?: string;
+  endDate?: string;
 }
 
 interface SkillCategory {
@@ -35,6 +37,7 @@ const experience: Experience[] = [
       "Implemented the application frontend and documented APIs using React and Tailwind CSS with DaisyUI, enhancing user experience and increase user retention by 20%",
       "Utilized the following technologies: Typescript, NodeJs, PostgreSQL, TypeORM, React, React-Query, Jira, Github",
     ],
+    startDate: "Jun 2023",
   },
   {
     title: "Fullstack Developer",
@@ -46,6 +49,8 @@ const experience: Experience[] = [
       "Implemented the application frontend and documented APIs using React and Tailwind CSS with DaisyUI, enhancing user experience and increase user retention by 20%",
       "Utilized the following technologies: Typescript, NodeJs, PostgreSQL, TypeORM, React, React-Query, Jira, Github",
     ],
+    startDate: "Oct 2022",
+    endDate: "Dec 2023",
   },
   {
     title: "Software Developer Itern",
@@ -57,6 +62,8 @@ const experience: Experience[] = [
       "Implemented the application frontend and documented APIs using React and Tailwind CSS with DaisyUI, enhancing user experience and increase user retention by 20%",
       "Utilized the following technologies: Typescript, NodeJs, PostgreSQL, TypeORM, React, React-Query, Jira, Github",
     ],
+    startDate: "",
+    endDate: "",
   },
 ];
 
@@ -157,16 +164,16 @@ const Resume: React.FC = () => {
       </div>
       <div className="Projects my-2">
         <HorizontalCategoryDivider categoryName={`Projects`} />
+        <p>
+          Some select project can be found
+          <a
+            href="https://www.github.com/stephen-lakes"
+            className="underline pl-1"
+          >
+            here
+          </a>
+        </p>
       </div>
-      <p>
-        Some select project can be found
-        <a
-          href="https://www.github.com/stephen-lakes"
-          className="underline pl-1"
-        >
-          here
-        </a>
-      </p>
     </div>
   );
 };
@@ -175,7 +182,7 @@ const ExperienceList: React.FC = () => {
   return (
     <>
       {experience.map((job, index) => (
-        <div className="mb-2">
+        <div className="mb-2" key={index}>
           <div className="row1 flex gap-3 items-center">
             <div className="w-2 h-2 bg-gray-500"></div>
             <div className="w-2 h-2 bg-white"></div>
@@ -203,8 +210,8 @@ const ExperienceList: React.FC = () => {
 const LanguageList: React.FC = () => {
   return (
     <>
-      {languages.map((lang) => (
-        <p className="flex gap-8">
+      {languages.map((lang, index) => (
+        <p className="flex gap-8" key={index}>
           <span>{lang.language}</span>
           <span className="text-[#777778]">{lang.level.toUpperCase()}</span>
         </p>
@@ -216,11 +223,11 @@ const LanguageList: React.FC = () => {
 const CertificationsList: React.FC = () => {
   return (
     <>
-      {certifications.map((c) => (
-        <div>
+      {certifications.map((c, i) => (
+        <div key={i}>
           <p className="font-semibold">{c.title}</p>
           <p className="flex justify-between">
-            <span className="text-sm text-gray-500">{c.academy}</span>
+            <span className="text-sm text-[#777778]">{c.academy}</span>
             <span className="text-xs">{c.dateEarned}</span>
           </p>
         </div>
@@ -232,8 +239,8 @@ const CertificationsList: React.FC = () => {
 const EducationList: React.FC = () => {
   return (
     <>
-      {education.map((e) => (
-        <div>{e}</div>
+      {education.map((e, i) => (
+        <div key={i}>{e}</div>
       ))}
     </>
   );
