@@ -1,4 +1,4 @@
-const Contact = () => {
+const ContactForm = () => {
   return (
     <>
       <div className="hero bg-base-200 min-h-screen">
@@ -37,4 +37,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;
