@@ -23,7 +23,7 @@ const BackToTopButton: React.FC = () => {
   return (
     <div
       onClick={scrollToTop}
-      className={`flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 fixed bottom-4 right-4 cursor-pointer ${
+      className={`flex items-center justify-center w-10 h-10 rounded-full bg-gray-950 fixed bottom-4 right-4 cursor-pointer ${
         showButton ? "block" : "hidden"
       }`}
     >
