@@ -3,6 +3,8 @@ import Home from "./home";
 import Resume from "./resume";
 import Contact from "./contact";
 import Project from "./project";
+import MobileFooter from "../components/mobileFooter";
+import BackToTopButton from "../components/backToTopButton";
 
 const Index: React.FC = () => {
   const [page, setPage] = useState(1);
@@ -34,6 +36,8 @@ const Index: React.FC = () => {
           </button>
         ))}
       </nav>
+      <BackToTopButton />
+      <MobileFooter />
     </div>
   );
 };
