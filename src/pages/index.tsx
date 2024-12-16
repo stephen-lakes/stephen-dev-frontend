@@ -10,13 +10,13 @@ const Index: React.FC = () => {
 
   const renderPage = () => {
     switch (page) {
-      case 1:
+      case 0:
         return <Home />;
-      case 2:
+      case 1:
         return <Resume />;
-      case 3:
+      case 2:
         return <Project />;
-      case 4:
+      case 3:
         return <Contact />;
       default:
         return <Home />;
@@ -29,7 +29,7 @@ const Index: React.FC = () => {
 
       <nav>
         {navItems.map((navItem, idx) => (
-          <button key={idx} onClick={() => setPage(idx + 1)}>
+          <button key={idx} onClick={() => setPage(idx)}>
             {navItem}
           </button>
         ))}
