@@ -1,11 +1,13 @@
 import React from "react";
 import Nav from "../components/nav";
+import Steps from "../components/steps";
 
 export const Home: React.FC = () => {
   return (
     <>
       <Intro />
       <Nav />
+      <Steps />
     </>
   );
 };
