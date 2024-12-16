@@ -6,7 +6,7 @@ import twitterIcon from "../assets/twitter.svg";
 
 const MobileFooter: React.FC = () => {
   return (
-    <div className="flex items-center justify-center flex-wrap gap-16 bg-gray-950 py-6">
+    <div className="flex items-center justify-center flex-wrap gap-16 py-6 mt-3">
       <a href="https://www.github.com/stephen-lakes">
         <img src={githubIcon} alt="" className="w-8 h-8" />
       </a>
