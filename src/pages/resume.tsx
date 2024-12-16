@@ -115,69 +115,65 @@ const education: string[] = ["B.Sc Mathematics at University of Lagos"];
 const Resume: React.FC = () => {
   return (
     <>
-    <PageMeta title="Stephen Oluyomi - Resume" favicon="" />
-    <div className="p-6 text-[15px]">
-      <h1 className="text-4xl">Stephen Oluyomi</h1>
-      <p>
-        Dynamic and results-driven software engineer with a robust background in
-        full-stack development, specializing in creating high-performance
-        applications and seamless user experiences. Demonstrated success in
-        developing innovative solutions, optimizing search functionalities, and
-        integrating email verification systems that significantly boost user
-        engagement and verification rates. I introduced a system that
-        streamlined our testing and release workflow, enhancing deployment
-        efficiency and reliability. Proficient in a diverse set of technologies
-        including TypeScript, Node.js, PostgreSQL, React, and Tailwind CSS, with
-        a strong focus on enhancing user retention through meticulous front-end
-        and back-end development. Adept at documenting APIs and working
-        collaboratively in fast-paced environments, dedicated to continuous
-        improvement and the delivery of impactful, high-quality software
-        solutions.
-      </p>
+      <PageMeta title="Stephen Oluyomi - Resume" favicon="" />
+      <div className="p-6 text-[15px]">
+        <h1 className="text-4xl">Stephen Oluyomi</h1>
+        <p>
+          Dynamic software engineer specializing in full-stack development,
+          delivering high-performance applications and exceptional user
+          experiences. Proven track record in innovative solutions, search
+          optimization, and email verification systems to boost engagement.
+          Streamlined testing and release workflows for enhanced deployment
+          efficiency. Skilled in TypeScript, Node.js, PostgreSQL, React, and
+          Tailwind CSS. Strong focus on user retention through meticulous
+          front-end and back-end development. Experienced in API documentation
+          and collaborative work in fast-paced environments, dedicated to
+          continuous improvement and high-quality software solutions.
+        </p>
 
-      <div className="skills my-2">
-        <HorizontalCategoryDivider categoryName={`Skills`} />
-        <div>
-          {skills.map((category, index) => (
-            <div className="flex gap-1" key={index}>
-              <h2 className="font-bold">{category.title}:</h2>
-              <p>{category.skills.join(", ")}</p>
-            </div>
-          ))}
+        <div className="skills my-2">
+          <HorizontalCategoryDivider categoryName={`Skills`} />
+          <div>
+            {skills.map((category, index) => (
+              <div className="flex gap-1" key={index}>
+                <h2 className="font-bold">{category.title}:</h2>
+                <p>{category.skills.join(", ")}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="experience my-2">
+          <HorizontalCategoryDivider categoryName={`Experience`} />
+          <ExperienceList />
+        </div>
+
+        <div className="education my-2">
+          <HorizontalCategoryDivider categoryName={`Education`} />
+          <EducationList />
+        </div>
+
+        <div className="certification my-2">
+          <HorizontalCategoryDivider categoryName={`Certifications`} />
+          <CertificationsList />
+        </div>
+        <div className="Languages my-2">
+          <HorizontalCategoryDivider categoryName={`Languages`} />
+          <LanguageList />
+        </div>
+        <div className="Projects my-2">
+          <HorizontalCategoryDivider categoryName={`Projects`} />
+          <p>
+            Some select project can be found
+            <a
+              href="https://www.github.com/stephen-lakes"
+              className="underline pl-1"
+            >
+              here
+            </a>
+          </p>
         </div>
       </div>
-
-      <div className="experience my-2">
-        <HorizontalCategoryDivider categoryName={`Experience`} />
-        <ExperienceList />
-      </div>
-
-      <div className="education my-2">
-        <HorizontalCategoryDivider categoryName={`Education`} />
-        <EducationList />
-      </div>
-
-      <div className="certification my-2">
-        <HorizontalCategoryDivider categoryName={`Certifications`} />
-        <CertificationsList />
-      </div>
-      <div className="Languages my-2">
-        <HorizontalCategoryDivider categoryName={`Languages`} />
-        <LanguageList />
-      </div>
-      <div className="Projects my-2">
-        <HorizontalCategoryDivider categoryName={`Projects`} />
-        <p>
-          Some select project can be found
-          <a
-            href="https://www.github.com/stephen-lakes"
-            className="underline pl-1"
-          >
-            here
-          </a>
-        </p>
-      </div>
-    </div>
     </>
   );
 };
