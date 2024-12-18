@@ -22,7 +22,7 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div className="font-sans">
+    <div className="font-sans p-3">
       <PageMeta title="Stephen Oluyomi - Software Engineer" favicon="" />
 
       <Navbar />
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="flex items-center p-3">
+      <div className="lg:hidden flex items-center py-6">
         <p className="font-cursive text-3xl">{`<Stephen />`}</p>
         <svg
           className="h-8 w-8 ml-auto"
