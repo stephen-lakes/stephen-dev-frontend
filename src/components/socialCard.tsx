@@ -6,13 +6,13 @@ import twitterIcon from "../assets/twitter.svg";
 
 const SocialCard: React.FC = () => {
   return (
-    <div className="flex items-center gap-4 flex-wrap absolute bottom-10 p-4 rounded shadow-2xl shadow-[#030712] w-4/12">
+    <div className="flex items-center gap-4 flex-wrap shadow-2xl shadow-[#030712] lg:absolute lg:bottom-10 p-4 rounded lg:w-4/12">
       <div className="avatar card shadow-md">
         <div className="ring-primary ring-offset-base-100 w-12 rounded-full ring ring-offset-2">
           <img src={myPic} alt="" />
         </div>
       </div>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-4">
         <a
           href="https://github.com/stephen-lakes"
           className="flex items-center"
