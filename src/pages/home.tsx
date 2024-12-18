@@ -2,7 +2,6 @@ import React from "react";
 import PageMeta from "../components/pageMeta";
 import homeFavicon from "../assets/github.svg";
 import Resume from "./resume";
-import MobileFooter from "../components/mobileFooter";
 import SocialCard from "../components/socialCard";
 
 export const Home: React.FC = () => {
