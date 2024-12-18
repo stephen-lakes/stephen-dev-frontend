@@ -1,14 +1,24 @@
 import React from "react";
-import Nav from "../components/nav";
 import PageMeta from "../components/pageMeta";
 import homeFavicon from "../assets/github.svg";
+import Resume from "./resume";
+import MobileFooter from "../components/mobileFooter";
+import SocialCard from "../components/socialCard";
 
 export const Home: React.FC = () => {
   return (
     <>
       <PageMeta title="Stephen Oluyomi" favicon={homeFavicon} />
-      <Intro />
-      <Nav />
+      <div className="max-h-screen md:flex lg:px-10">
+        <div className="w-2/5 hidden lg:block lg:mt-24">
+          <Intro />
+          {/* <MobileFooter /> */}
+          <SocialCard />
+        </div>
+        <div className="lg:w-3/5 lg:overflow-y-scroll lg:no-scrollbar shadow-2xl">
+          <Resume />
+        </div>
+      </div>
     </>
   );
 };
