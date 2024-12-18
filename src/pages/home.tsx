@@ -11,7 +11,6 @@ export const Home: React.FC = () => {
       <div className="max-h-screen md:flex lg:px-10">
         <div className="w-2/5 hidden lg:block lg:mt-24">
           <Intro />
-          {/* <MobileFooter /> */}
           <SocialCard />
         </div>
         <div className="lg:w-3/5 lg:overflow-y-scroll lg:no-scrollbar shadow-2xl">
