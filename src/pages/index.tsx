@@ -7,7 +7,6 @@ import PageMeta from "../components/pageMeta";
 
 const Index: React.FC = () => {
   const [page, setPage] = useState(0);
-  const navItems: string[] = ["Home", "Resume", "Projects", "Contact"];
 
   const renderPage = () => {
     switch (page) {
@@ -23,19 +22,41 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="font-sans">
       <PageMeta title="Stephen Oluyomi - Software Engineer" favicon="" />
+
+      <Navbar />
+
       {renderPage()}
 
-      <nav>
-        {navItems.map((navItem, idx) => (
-          <button key={idx} onClick={() => setPage(idx)}>
-            {navItem}
-          </button>
-        ))}
-      </nav>
       <BackToTopButton />
     </div>
+  );
+};
+
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <div className="flex items-center p-3">
+        <p className="font-cursive text-3xl">{`<Stephen />`}</p>
+        <svg
+          className="h-8 w-8 ml-auto"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </div>
+    </>
   );
 };
 
