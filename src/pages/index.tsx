@@ -6,7 +6,7 @@ import BackToTopButton from "../components/backToTopButton";
 import PageMeta from "../components/pageMeta";
 
 const Index: React.FC = () => {
-  const [page, setPage] = useState(2);
+  const [page, setPage] = useState(0);
   const navItems: string[] = ["Home", "Resume", "Projects", "Contact"];
 
   const renderPage = () => {
@@ -27,13 +27,13 @@ const Index: React.FC = () => {
       <PageMeta title="Stephen Oluyomi - Software Engineer" favicon="" />
       {renderPage()}
 
-      {/* <nav>
+      <nav>
         {navItems.map((navItem, idx) => (
           <button key={idx} onClick={() => setPage(idx)}>
             {navItem}
           </button>
         ))}
-      </nav> */}
+      </nav>
       <BackToTopButton />
     </div>
   );
