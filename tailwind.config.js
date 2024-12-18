@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    // extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
+        cursive: ['"Pacifico"', "cursive"],
+      },
+    },
   },
   plugins: [
     function ({ addUtilities }) {
