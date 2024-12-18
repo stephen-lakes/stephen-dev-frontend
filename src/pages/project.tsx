@@ -17,6 +17,12 @@ const projects: Project[] = [
     link: "https://github.com/stephen-lakes/swiftpay/",
     technologies: ["NodeJs", "Express", "Postman", "PostgreSQL", "TypeORM"],
   },
+  {
+    title: "Stephen-dev",
+    description: "My Portfolio",
+    link: "https://github.com/stephen-lakes/stephen-dev-frontend",
+    technologies: ["NodeJs", "React", "TailwindCSS"],
+  },
 ];
 
 const Project: React.FC = () => {
@@ -44,7 +50,7 @@ const Project: React.FC = () => {
             <div className="font-semibold">{project.title}</div>
             <div className="text-sm">{project.description}</div>
             <div className="mt-3 text-xs font-extralight">
-              {project.technologies.join(", ")}
+              {project.technologies.join("+ ")}
             </div>
           </div>
         ))}
