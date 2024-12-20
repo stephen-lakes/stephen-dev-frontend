@@ -1,7 +1,6 @@
 import React from "react";
 import HorizontalCategoryDivider from "../components/horizontalCategoryDivider";
 import PageMeta from "../components/pageMeta";
-import Layout from "./layout";
 
 interface Experience {
   title: string;
