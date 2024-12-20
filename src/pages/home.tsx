@@ -64,7 +64,7 @@ export const Profile = () => {
       <ProfilePicture />
       <Bio />
       {/* CTA */}
-      <div className="mt-8 btn text-center border-gray-700 hover:bg-gray-950 px-8">
+      <div className="lg:hidden mt-8 btn text-center border-gray-700 hover:bg-gray-950 px-8">
         Explore &#8594;
       </div>
     </div>
