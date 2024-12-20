@@ -59,6 +59,15 @@ const Navbar: React.FC = () => {
           ></path>
         </svg>
       </div>
+      <div className="navbar-open-container">
+        <ul>
+          <li>
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">Resume</a>
+          </li>
+        </ul>
+      </div>
     </>
   );
 };
