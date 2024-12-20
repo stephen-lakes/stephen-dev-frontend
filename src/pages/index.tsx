@@ -1,39 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Layout from "./layout";
 import Home from "./home";
-import Contact from "./contact";
-import Project from "./project";
-import BackToTopButton from "../components/backToTopButton";
-import PageMeta from "../components/pageMeta";
 import Resume from "./resume";
-import MobileNavbar from "../components/mobileNavbar";
+import Contact from "./contact";
+import NotFound from "./notFound";
 
 const Index: React.FC = () => {
-  const [page, setPage] = useState(3);
-
-  const renderPage = () => {
-    switch (page) {
-      case 0:
-        return <Home />;
-      case 1:
-        return <Project />;
-      case 2:
-        return <Contact />;
-      case 3:
-        return <Resume />;
-      default:
-        return <Home />;
-    }
-  };
-
   return (
-    <div className="font-sans p-3">
-      <PageMeta title="Stephen Oluyomi - Software Engineer" favicon="" />
-
-      <MobileNavbar />
-
-      {renderPage()}
-
-      <BackToTopButton />
+    <div>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 };
