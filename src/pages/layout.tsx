@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import BackToTopButton from "../components/backToTopButton";
 import MobileNavbar from "../components/mobileNavbar";
 import PageMeta from "../components/pageMeta";
