@@ -37,47 +37,7 @@ const Index: React.FC = () => {
   );
 };
 
-// const Navbar: React.FC = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   return (
-//     <>
-//       <div className="lg:hidden flex items-center py-6">
-//         <p className="font-cursive text-3xl">{`<Stephen />`}</p>
-//         <svg
-//           onClick={() => setIsOpen(!isOpen)}
-//           className="h-8 w-8 ml-auto"
-//           fill="none"
-//           stroke="currentColor"
-//           viewBox="0 0 24 24"
-//           xmlns="http://www.w3.org/2000/svg"
-//         >
-//           <path
-//             strokeLinecap="round"
-//             strokeLinejoin="round"
-//             strokeWidth="2"
-//             d="M4 6h16M4 12h16M4 18h16"
-//           ></path>
-//         </svg>
-//       </div>
-//       <div className="navbar-open-container bg-blue-700 text-center h-screen absolute">
-//         <ul className=" flex flex-col gap-4">
-//           <li>
-//             <a href="">Home</a>
-//           </li>
-//           <li>
-//             <a href="">Contact</a>
-//           </li>
-//           <li>
-//             <a href="">Resume</a>
-//           </li>
-//         </ul>
-//       </div>
-//     </>
-//   );
-// };
-
-function Navbar() {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -160,6 +120,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Index;
