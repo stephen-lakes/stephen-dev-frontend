@@ -9,7 +9,7 @@ export const Home: React.FC = () => {
   return (
     <>
       <PageMeta title="Stephen Oluyomi" favicon={homeFavicon} />
-      <div className="max-h-screen md:flex lg:px-10">
+      <div className="px-4 max-h-screen md:flex lg:px-10">
         <div className="lg:w-2/5 lg:block lg:mt-24">
           <Profile />
           <MobileFooter />
