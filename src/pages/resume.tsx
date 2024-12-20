@@ -75,7 +75,14 @@ const skills: SkillCategory[] = [
   },
   {
     title: "Frameworks/Libraries",
-    skills: ["React", "Express", "React Native", "React-Query", "Typeorm"],
+    skills: [
+      "React",
+      "Express",
+      "React Native",
+      "React-Query",
+      "Typeorm",
+      "Django",
+    ],
   },
   {
     title: "Storages/Databases",
@@ -83,7 +90,11 @@ const skills: SkillCategory[] = [
   },
   {
     title: "Tooling",
-    skills: ["Git", "Linux", "GCP", "AWS"],
+    skills: ["Git", "Linux", "Postman"],
+  },
+  {
+    title: "Cloud",
+    skills: ["GCP", "Atlas"],
   },
 ];
 
@@ -186,7 +197,9 @@ const ExperienceList: React.FC = () => {
           <div className="row1 flex gap-3 items-center">
             <div className="w-2 h-2 bg-gray-500"></div>
             <div className="w-2 h-2 bg-white"></div>
-            <div className="">{job.startDate} - {job.endDate || "present"}</div>
+            <div className="">
+              {job.startDate} - {job.endDate || "present"}
+            </div>
           </div>
           <div className="row2 flex gap-3">
             <div className="border-l border-gray-500 ml-0.5"></div>
