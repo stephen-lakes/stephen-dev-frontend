@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Home from "./home";
 import Contact from "./contact";
 import Project from "./project";
@@ -39,6 +39,14 @@ const Index: React.FC = () => {
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
 
   return (
     <div>
@@ -93,7 +101,7 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
       <div
-        className={`fixed inset-0 bg-[#191E24] bg-opacity-75 transition-opacity ${
+        className={`fixed inset-0 bg-[#191E24] transition-opacity ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
