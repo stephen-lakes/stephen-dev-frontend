@@ -11,8 +11,10 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <div className="font-sans px-3">
         <PageMeta title="Stephen Oluyomi - Software Engineer" favicon="" />
-        <MobileNavbar />
-        <main>
+        <header>
+          <MobileNavbar />
+        </header>
+        <main className="">
           {/* Other pages go here */}
           {children}
         </main>
