@@ -41,16 +41,16 @@ const experience: Experience[] = [
     startDate: "Jun 2023",
   },
   {
-    title: "Fullstack Developer",
+    title: "Fullstack Engineer",
     company: "SFEA(Sound Foundation Edtech Academy)",
     contract: "Part time",
     work: [
-      "Built a fullstack solution to streamline apartment searches by integrating multiple data sources and developing robust search functionalities, resulting in a 30% increase in user engagement and a 15% reduction in search time",
-      "Developed and integrated email functionalities, including verification, registration, and authentication processes, which incresed user verification rates by 25% and reduced registration drop-off by 10%",
-      "Implemented the application frontend and documented APIs using React and Tailwind CSS with DaisyUI, enhancing user experience and increase user retention by 20%",
-      "Utilized the following technologies: Typescript, NodeJs, PostgreSQL, TypeORM, React, React-Query, Jira, Github",
+      "Designed and delivered comprehensive programming courses, workshops, and tutorials for students, professionals, and enthusiasts, resulting in a 95% student satifaction rate",
+      "Organised hands-on training and coding exercises, guiding students through complex software development tasks including backend projects and offering personalized feedback and support",
+      "Contributed to a 95% increase in the bootcamp’s income through effective course design and delivery",
+      "Utilized the following technologies: Javascript, NodeJs, ExpressJs, Python, Git, Github, React",
     ],
-    startDate: "Oct 2022",
+    startDate: "Sept 2022",
     endDate: "Dec 2023",
   },
   {
@@ -58,13 +58,13 @@ const experience: Experience[] = [
     company: "Raoatech IT-Electromech",
     contract: "Full time",
     work: [
-      "Built a fullstack solution to streamline apartment searches by integrating multiple data sources and developing robust search functionalities, resulting in a 30% increase in user engagement and a 15% reduction in search time",
-      "Developed and integrated email functionalities, including verification, registration, and authentication processes, which incresed user verification rates by 25% and reduced registration drop-off by 10%",
-      "Implemented the application frontend and documented APIs using React and Tailwind CSS with DaisyUI, enhancing user experience and increase user retention by 20%",
-      "Utilized the following technologies: Typescript, NodeJs, PostgreSQL, TypeORM, React, React-Query, Jira, Github",
+      "Contributed to the development of the company's projects using languages such as Python, and JavaScript, collaborating with senior engineers to resolve complex coding issues and implement efficient solutions",
+      "Participated in agile development methodologies, attending daily stand-ups, sprint planning, and retrospectives",
+      "Worked closely with cross-functional teams to deliver high-quality software features, resulting in a 20% customer satisfaction rate",
+      "Utilized the following technologies: Python, Javascript",
     ],
-    startDate: "",
-    endDate: "",
+    startDate: "Jan 2022",
+    endDate: "Dec 2022",
   },
 ];
 
@@ -83,7 +83,7 @@ const skills: SkillCategory[] = [
   },
   {
     title: "Tooling",
-    skills: ["Git", "Linux", "GCP", "AWS", "Docker"],
+    skills: ["Git", "Linux", "GCP", "AWS"],
   },
 ];
 
@@ -186,7 +186,7 @@ const ExperienceList: React.FC = () => {
           <div className="row1 flex gap-3 items-center">
             <div className="w-2 h-2 bg-gray-500"></div>
             <div className="w-2 h-2 bg-white"></div>
-            <div className="">2023 - 2024 </div>
+            <div className="">{job.startDate} - {job.endDate || "present"}</div>
           </div>
           <div className="row2 flex gap-3">
             <div className="border-l border-gray-500 ml-0.5"></div>
