@@ -12,7 +12,6 @@ export const Home: React.FC = () => {
       <div className="px-4 max-h-screen md:flex lg:px-10">
         <div className="lg:w-2/5 lg:block lg:mt-24">
           <Profile />
-          <MobileFooter />
         </div>
         <div className="hidden lg:block lg:w-3/5 lg:overflow-y-scroll lg:no-scrollbar shadow-2xl">
           <Resume />
@@ -63,7 +62,7 @@ export const Profile = () => {
     <div className="flex flex-col items-center text-center">
       <ProfilePicture />
       <Bio />
-      {/* CTA */}
+
       <div className="lg:hidden mt-8 btn text-center border-gray-700 hover:bg-gray-950 px-8">
         Explore &#8594;
       </div>
