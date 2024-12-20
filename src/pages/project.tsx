@@ -21,14 +21,14 @@ const projects: Project[] = [
     title: "Phonebook app",
     description:
       "Developed a full-stack phonebook application with CRUD functionalities on a database hosted on MongoDB Atlas. Integrated a countries API and the OpenWeatherMap API to provide real-time weather information for various countries",
-    link: "https://github.com/stephen-lakes/swiftpay/",
+    link: "https://part3-exercises-backend.onrender.com/",
     technologies: ["NodeJs", "Express", "MongoDB", "PostgreSQL", "TypeORM"],
   },
   {
     title: "QRCode generator",
     description:
       "Comprehensive API using TypeScript and Node.js to generate QR codes from text input, with support different output formats including base64-encoded images, image files",
-    link: "https://github.com/stephen-lakes/swiftpay/",
+    link: "https://github.com/stephen-lakes/qrcode-api",
     technologies: ["NodeJs", "Express", "Typescript", "Mongoose"],
   },
   {
