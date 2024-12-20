@@ -3,12 +3,13 @@ import PageMeta from "../components/pageMeta";
 import homeFavicon from "../assets/github.svg";
 import Resume from "./resume";
 import myPic from "../assets/me.jpg";
+import { Link } from "react-router";
 
 export const Home: React.FC = () => {
   return (
     <>
       <PageMeta title="Stephen Oluyomi" favicon={homeFavicon} />
-      <div className="px-4 max-h-screen md:flex lg:px-10">
+      <div className="max-h-screen md:flex lg:px-10">
         <div className="lg:w-2/5 lg:block lg:mt-24">
           <Profile />
         </div>
@@ -19,13 +20,13 @@ export const Home: React.FC = () => {
     </>
   );
 };
-
+// class="flex flex-col items-center text-center"
 const Bio = () => {
   return (
     <>
       <h1 className="mt-2 text-2xl font-[600]">Hi,👋🏻 I'm Stephen Oluyomi</h1>
-      <p className="mt-2 text-[13px] leading-8">
-        I am a <span className="font-bold">software engineer</span>,
+      <p className="mt-2 mb-6 text-[13px] leading-8">
+        {/* I am a <span className="font-bold">software engineer</span>,
         <span className="font-bold"> mathematician</span> with a deep
         fascination for <span className="font-bold">AI and robotics</span>. I
         thrive on
@@ -37,8 +38,18 @@ const Bio = () => {
         every day by adhering to industry-standard practices and focusing on
         building
         <span className="font-bold"> safe </span> and
-        <span className="font-bold"> secure</span> software
+        <span className="font-bold"> secure</span> software */}
+        I’m a software engineer and mathematician with a passion for AI and
+        robotics. I excel at solving complex problems and building tech
+        solutions. Becoming a better engineer one day at a time, I'm big on
+        security 🔒 
       </p>
+
+      <Link to="/projects">
+        <button className="rounded border-gray-950 bg-gray-950 border text-white-500 px-4 py-2  hover:text-white">
+          Explore &#8594;
+        </button>
+      </Link>
     </>
   );
 };
@@ -61,10 +72,6 @@ export const Profile = () => {
     <div className="flex flex-col items-center text-center">
       <ProfilePicture />
       <Bio />
-
-      <div className="lg:hidden mt-8 btn text-center border-gray-700 hover:bg-gray-950 px-8">
-        Explore &#8594;
-      </div>
     </div>
   );
 };
