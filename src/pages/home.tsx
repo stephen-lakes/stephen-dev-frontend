@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
           <Profile />
           <MobileFooter />
         </div>
-        <div className="hidden lg:w-3/5 lg:overflow-y-scroll lg:no-scrollbar shadow-2xl">
+        <div className="hidden lg:block lg:w-3/5 lg:overflow-y-scroll lg:no-scrollbar shadow-2xl">
           <Resume />
         </div>
       </div>
