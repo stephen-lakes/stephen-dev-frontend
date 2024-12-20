@@ -1,6 +1,7 @@
 import React from "react";
 import HorizontalCategoryDivider from "../components/horizontalCategoryDivider";
 import PageMeta from "../components/pageMeta";
+import Layout from "./layout";
 
 interface Experience {
   title: string;
@@ -259,13 +260,4 @@ const EducationList: React.FC = () => {
   );
 };
 
-// const ProjectList: React.FC = () => {
-//   return (
-//     <>
-//       {projectList.map((p) => (
-//         <div>{p}</div>
-//       ))}
-//     </>
-//   );
-// };
 export default Resume;
