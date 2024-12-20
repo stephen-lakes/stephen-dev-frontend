@@ -7,7 +7,7 @@ import PageMeta from "../components/pageMeta";
 import Resume from "./resume";
 
 const Index: React.FC = () => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(3);
 
   const renderPage = () => {
     switch (page) {
