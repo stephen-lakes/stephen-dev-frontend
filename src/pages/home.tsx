@@ -3,7 +3,6 @@ import PageMeta from "../components/pageMeta";
 import homeFavicon from "../assets/github.svg";
 import Resume from "./resume";
 import myPic from "../assets/me.jpg";
-import MobileFooter from "../components/mobileFooter";
 
 export const Home: React.FC = () => {
   return (
