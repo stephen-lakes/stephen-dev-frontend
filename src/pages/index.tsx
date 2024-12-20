@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
       <div className="lg:hidden flex items-center py-6">
         <p className="font-cursive text-3xl">{`<Stephen />`}</p>
         <svg
-        onClick={()=> setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)}
           className="h-8 w-8 ml-auto"
           fill="none"
           stroke="currentColor"
@@ -64,7 +64,11 @@ const Navbar: React.FC = () => {
         <ul>
           <li>
             <a href="">Home</a>
+          </li>
+          <li>
             <a href="">Contact</a>
+          </li>
+          <li>
             <a href="">Resume</a>
           </li>
         </ul>
