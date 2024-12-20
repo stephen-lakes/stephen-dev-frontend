@@ -4,9 +4,10 @@ import Contact from "./contact";
 import Project from "./project";
 import BackToTopButton from "../components/backToTopButton";
 import PageMeta from "../components/pageMeta";
+import Resume from "./resume";
 
 const Index: React.FC = () => {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
 
   const renderPage = () => {
     switch (page) {
@@ -16,6 +17,8 @@ const Index: React.FC = () => {
         return <Project />;
       case 2:
         return <Contact />;
+      case 3:
+        return <Resume />;
       default:
         return <Home />;
     }
