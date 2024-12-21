@@ -1,6 +1,7 @@
 import React from "react";
 import PageMeta from "../components/pageMeta";
 import homeFavicon from "../assets/github.svg";
+import { Link } from "react-router";
 
 interface Project {
   title: string;
@@ -77,6 +78,14 @@ const Project: React.FC = () => {
         >
           More
         </a>
+      </div>
+
+      <div className="mt-4 text-center">
+        <Link to="/resume">
+          <button className="rounded border-gray-950 bg-gray-950 border text-white-500 px-4 py-2  hover:text-white">
+            Resume &#8594;
+          </button>
+        </Link>
       </div>
     </div>
   );
