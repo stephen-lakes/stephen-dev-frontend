@@ -103,7 +103,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
 
-const MobileNavbar = () => {
+const MobileNavbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <>
