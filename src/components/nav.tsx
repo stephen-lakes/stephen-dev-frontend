@@ -4,8 +4,8 @@ import Line from "./line";
 const Nav: React.FC = () => {
   return (
     <>
-      <div className="p-4">
-        <Link to="home">
+      <nav>
+        <Link to="/home">
           <a href="" className="flex items-center gap-4 my-3">
             {/* <img
               width="50"
@@ -58,7 +58,7 @@ const Nav: React.FC = () => {
             <span>Contact</span>
           </a>
         </Link>
-      </div>
+      </nav>
     </>
   );
 };
