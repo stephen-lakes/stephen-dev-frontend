@@ -19,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
           {children}
         </main>
         <BackToTopButton />
-        <footer>
+        <footer className="lg:hidden">
           <MobileFooter />
         </footer>
       </div>
