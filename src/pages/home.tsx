@@ -58,7 +58,7 @@ const Bio = () => {
 const ProfilePicture = () => {
   return (
     <>
-      <div className="w-[192px] h-[192px] overflow-hidden rounded-full">
+      <div className="w-[192px] h-[192px] overflow-hidden rounded-full lg:hidden">
         <img
           src={myPic}
           alt=""
