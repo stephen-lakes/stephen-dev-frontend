@@ -42,14 +42,16 @@ const Bio = () => {
         I’m a software engineer and mathematician with a passion for AI and
         robotics. I excel at solving complex problems and building tech
         solutions. Becoming a better engineer one day at a time, I'm big on
-        security 🔒 
+        security 🔒
       </p>
 
-      <Link to="/projects">
-        <button className="rounded border-gray-950 bg-gray-950 border text-white-500 px-4 py-2  hover:text-white">
-          Explore &#8594;
-        </button>
-      </Link>
+      <div className="mt-4 text-center lg:hidden">
+        <Link to="/projects">
+          <button className="rounded border-gray-950 bg-gray-950 border text-white-500 px-4 py-2  hover:text-white">
+            Explore &#8594;
+          </button>
+        </Link>
+      </div>
     </>
   );
 };
