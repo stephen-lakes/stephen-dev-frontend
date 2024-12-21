@@ -1,6 +1,7 @@
 import React from "react";
 import HorizontalCategoryDivider from "../components/horizontalCategoryDivider";
 import PageMeta from "../components/pageMeta";
+import { Link } from "react-router";
 
 interface Experience {
   title: string;
@@ -183,6 +184,14 @@ const Resume: React.FC = () => {
               here
             </a>
           </p>
+        </div>
+
+        <div className="mt-4 text-center">
+          <Link to="/contact">
+            <button className="rounded border-gray-950 bg-gray-950 border text-white-500 px-4 py-2  hover:text-white">
+              Contact &#8594;
+            </button>
+          </Link>
         </div>
       </div>
     </>
