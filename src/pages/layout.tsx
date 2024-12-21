@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <div className="font-sans px-3">
         <PageMeta title="Stephen Oluyomi - Software Engineer" favicon="" />
-        <header>
+        <header className="lg:hidden">
           <MobileNavbar />
         </header>
         <main className="">
