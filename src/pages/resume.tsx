@@ -127,8 +127,8 @@ const Resume: React.FC = () => {
   return (
     <>
       <PageMeta title="Stephen Oluyomi - Resume" favicon="" />
-      <div className="p-6 text-[15px] bg-[#191E24]">
-        <h1 className="text-4xl">Stephen Oluyomi</h1>
+      <div className=" text-[15px] bg-[#191E24]">
+        <h1 className="text-3xl lg:text-4xl">Stephen Oluyomi</h1>
         <p>
           Dynamic software engineer specializing in full-stack development,
           delivering high-performance applications and exceptional user
