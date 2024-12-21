@@ -83,7 +83,7 @@ const Project: React.FC = () => {
         </a>
       </div>
 
-      <div className="mt-4 text-center">
+      <div className="mt-4 text-center lg:hidden">
         <Link to="/resume">
           <button className="rounded border-gray-950 bg-gray-950 border text-white-500 px-4 py-2  hover:text-white">
             Resume &#8594;
