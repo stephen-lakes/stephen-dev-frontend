@@ -9,13 +9,13 @@ const MobileFooter: React.FC = () => {
     <div className="flex flex-col items-center">
       <div className="flex items-center justify-center flex-wrap gap-16 py-6 mt-3">
         <a href="https://www.github.com/stephen-lakes">
-          <img src={githubIcon} alt="" className="w-8 h-8" />
+          <img src={githubIcon} alt="" className="w-6 h-6" />
         </a>
         <a href="https://www.linkedin.com/in/stephenoluyomi/">
-          <img src={linkedIncon} alt="" className="w-8 h-8" />
+          <img src={linkedIncon} alt="" className="w-6 h-6" />
         </a>
         <a href="https://www.x.com/StephenOluyomi">
-          <img src={twitterIcon} alt="" className="w-8 h-8" />
+          <img src={twitterIcon} alt="" className="w-6 h-6" />
         </a>
       </div>
     </div>
